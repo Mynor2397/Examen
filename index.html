@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/bootstrap.min (3).css">
+    <script src="./public/js/Chart.min.js"></script>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="container">
+            <div class="card-body ingresar">
+                <div class="row align-items-start">
+                    <div class="col-xs-12 col-sm-12 col-lg-4 col-md-4 ">
+                        <div class="form-group ">
+                            <label>Seleccione un departamento </label>
+                            <select id="departamento" class="custom-select ingresar form-control ">
+
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-12 col-sm-12 col-lg-4 col-md-3">
+                        <button class="btn btn-outline-primary btn-block text-center" onclick="Leer();">
+                            Aceptar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 p-4">
+                <div class="card border-primary mb-3 " style="width: 70rem;"">
+                    <div class=" card-body">
+                    <div class="card-header text-center font_blue">Detalle de información</div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID departamento</th>
+                                <th scope="col">ID municipio</th>
+                                <th scope="col">Nombre del municipio</th>
+                                <th scope="col">Poblacion total</th>
+                                <th scope="col">Alfabetismo</th>
+                                <th scope="col">Total hogares</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="depto_id"></td>
+                                <td id="municipio_id"></td>
+                                <td id="nombre"></td>
+                                <td id="pob_total"></td>
+                                <td id="alfabetismo"></td>
+                                <td id="total_hogares"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-3 col-sm-3 col-lg-3 col-md-3 p-4">
+
+        </div>
+        <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 p-4">
+            <div class="card border-primary mb-3 " style="max-width: 40rem; height: 375px;">
+                <div class="card-header text-center font_blue">Procentaje de Poblacion</div>
+                <div class="card-body " style="max-width: 40rem; height: 250px">
+                    <canvas style="max-width: 40rem; height: 250px;" id="oilChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-lg-3 col-md-3 p-4">
+
+        </div>
+    </div>
+
+
+    <script src="./public/js/jquery-3.4.1.min.js"></script>
+    <script src="./public/js/main.js"></script>
+</body>
+
+</html>
